@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jona's Smurfen Dorp - Boek een Magisch Verblijf</title>
+  <meta name="description" content="Welkom in Jona's Smurfen Dorp! Krijg een unieke rondleiding van gids Jona de Smurf en boek je eigen gezellige paddenstoelenhuisje in het bos.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Sticky Navigation Header -->
+  <header id="main-header" class="site-header">
+    <div class="header-container">
+      <a href="#" class="logo" aria-label="Jona's Smurfen Dorp Home">
+        <span class="logo-icon"><i data-lucide="home"></i></span>
+        <span class="logo-text">Jona's <span>Smurfen Dorp</span></span>
+      </a>
+      
+      <div class="header-controls">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Licht/donker thema wisselen" title="Licht/donker thema wisselen">
+          <span class="toggle-track">
+            <i data-lucide="sun" class="icon-sun"></i>
+            <i data-lucide="moon" class="icon-moon"></i>
+            <span class="toggle-knob"></span>
+          </span>
+        </button>
+        
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Menu openen/sluiten">
+          <i data-lucide="menu" class="icon-menu"></i>
+          <i data-lucide="x" class="icon-close"></i>
+        </button>
+      </div>
+      
+      <nav id="primary-navigation" class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#over-jona" class="nav-link">Over Jona</a></li>
+          <li><a href="#rondleiding" class="nav-link">De Rondleiding</a></li>
+          <li><a href="#boek-huisje" class="nav-link">Boek een Huisje</a></li>
+          <li><a href="#ervaringen" class="nav-link">Ervaringen</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="#boek-huisje" class="btn btn-primary btn-sm">Boek Nu</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="hero-background">
+        <img src="village_hero.png" alt="Sfeervol Smurfen Dorp met Paddenstoelenhuisjes" fetchpriority="high">
+        <div class="hero-overlay"></div>
+      </div>
+      
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="badge">Welkom in het bos!</span>
+          <h1>Ontdek het magische dorp van Jona</h1>
+          <p>Laat je rondleiden door onze vrolijke gids Jona de Smurf en ervaar het ultieme smurfenleven. Boek een onvergetelijke overnachting in een van onze authentieke paddenstoelenhuisjes.</p>
+          <div class="hero-actions">
+            <a href="#rondleiding" class="btn btn-primary"><i data-lucide="map"></i> Start Rondleiding</a>
+            <a href="#boek-huisje" class="btn btn-secondary"><i data-lucide="calendar"></i> Huisje Boeken</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Jona Section -->
+    <section class="about-section section-padding" id="over-jona">
+      <div class="container">
+        <div class="grid grid-2-cols align-center">
+          <div class="about-image-wrapper">
+            <div class="about-glow"></div>
+            <img src="jona_guide.png" alt="Jona de Smurf gids" class="about-img">
+            <div class="badge-jona-tag">
+              <i data-lucide="shield-check"></i> Officieel Gecertificeerd Gids
+            </div>
+          </div>
+          <div class="about-content">
+            <span class="section-subtitle">Ontmoet je gastheer</span>
+            <h2>"Hallo! Ik ben Jona!"</h2>
+            <p class="lead">Als officiële dorpsgids van het Smurfen Dorp vind ik niets leuker dan menselijke bezoekers rond te leiden door onze magische wereld.</p>
+            <p>Al generaties lang wonen wij smurfen diep in dit beschutte bos, verborgen voor Gargamel en zijn kat Azraël. Vandaag openen we de poorten speciaal voor jou! Ik laat je de mooiste plekjes zien en zorg dat je verblijf in een van onze paddenstoelenhuisjes werkelijk smurfig wordt.</p>
+            
+            <div class="features-list">
+              <div class="feature-item">
+                <div class="feature-icon"><i data-lucide="check"></i></div>
+                <div>
+                  <h3>Gastvrij en Vrolijk</h3>
+                  <p>Altijd in voor een grapje en vol verhalen over de dorpsgeschiedenis.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon"><i data-lucide="check"></i></div>
+                <div>
+                  <h3>Magische Lokaties</h3>
+                  <p>Ontdek plekjes die normaal gesproken verborgen blijven voor mensen.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Tour Section -->
+    <section class="tour-section section-padding" id="rondleiding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Interactieve Ontdekkingstocht</span>
+          <h2>Rondleiding door het Smurfendorp</h2>
+          <p>Klik op de verschillende locaties op de kaart om samen met Jona op pad te gaan en de geheimen van het dorp te ontdekken!</p>
+        </div>
+
+        <div class="tour-layout">
+          <!-- Tour Map Visualization -->
+          <div class="tour-map-card">
+            <div class="map-bg"></div>
+            
+            <!-- Map Interactive Nodes -->
+            <div class="map-nodes">
+              <!-- Node 1: Dorpsplein -->
+              <button class="map-node active" data-location="dorpsplein" style="top: 50%; left: 50%;" aria-label="Dorpsplein en Grote Paddenstoel">
+                <span class="node-pulse"></span>
+                <span class="node-icon"><i data-lucide="home"></i></span>
+                <span class="node-label">Dorpsplein</span>
+              </button>
+              
+              <!-- Node 2: Jona's Huisje -->
+              <button class="map-node" data-location="jonas-huisje" style="top: 30%; left: 35%;" aria-label="Jona's Paddenstoelenhuisje">
+                <span class="node-pulse"></span>
+                <span class="node-icon"><i data-lucide="user"></i></span>
+                <span class="node-label">Jona's Huisje</span>
+              </button>
+              
+              <!-- Node 3: Rivier & Brug -->
+              <button class="map-node" data-location="smurfenrivier" style="top: 65%; left: 28%;" aria-label="De Smurfenrivier en Houten Brug">
+                <span class="node-pulse"></span>
+                <span class="node-icon"><i data-lucide="droplets"></i></span>
+                <span class="node-label">De Rivier</span>
+              </button>
+              
+              <!-- Node 4: Bessenveld -->
+              <button class="map-node" data-location="bessenveld" style="top: 25%; left: 70%;" aria-label="Het Smurfenbessenveld">
+                <span class="node-pulse"></span>
+                <span class="node-icon"><i data-lucide="leaf"></i></span>
+                <span class="node-label">Bessenveld</span>
+              </button>
+              
+              <!-- Node 5: Sarsaparillabos -->
+              <button class="map-node" data-location="sarsaparilla" style="top: 75%; left: 68%;" aria-label="Het Sarsaparillabos">
+                <span class="node-pulse"></span>
+                <span class="node-icon"><i data-lucide="trees"></i></span>
+                <span class="node-label">Sarsaparillabos</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Tour Guide Panel (Jona Speaks) -->
+          <div class="tour-guide-panel">
+            <div class="guide-avatar-box">
+              <div class="guide-avatar-circle">
+                <img src="jona_guide.png" alt="Jona de Gids spreekt" id="guide-avatar-img">
+              </div>
+              <div class="guide-status">
+                <span class="status-indicator online"></span>
+                <span id="guide-status-text">Jona vertelt...</span>
+              </div>
+            </div>
+            
+            <div class="speech-bubble-wrapper">
+              <div class="speech-bubble">
+                <h3 id="tour-location-title">Het Dorpsplein</h3>
+                <p id="tour-location-text">Welkom op ons gezellige dorpsplein! Dit is het hart van ons smurfenrijk. In het midden staat de Grote Paddenstoel waar Papa Smurf woont en zijn toverdrankjes brouwt. Hier vieren we onze legendarische smurfenfeesten en komen we samen voor belangrijk overleg. Kijk eens rond, zie je hoe mooi de bloemen bloeien?</p>
+              </div>
+              <div class="speech-bubble-tail"></div>
+            </div>
+
+            <div class="tour-navigation">
+              <button id="prev-tour-btn" class="btn btn-outline btn-icon" aria-label="Vorige locatie"><i data-lucide="arrow-left"></i></button>
+              <span id="tour-progress">1 / 5</span>
+              <button id="next-tour-btn" class="btn btn-outline btn-icon" aria-label="Volgende locatie"><i data-lucide="arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cabin Booking Section -->
+    <section class="booking-section section-padding" id="boek-huisje">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Uniek Overnachten</span>
+          <h2>Kies jouw paddenstoelenhuisje</h2>
+          <p>Onze huisjes zijn met de hand uitgehold en sfeervol ingericht met natuurlijke bosmaterialen. Welke smurfige slaapplek kies jij?</p>
+        </div>
+
+        <div class="grid grid-booking-layout">
+          <!-- Cabins Options Slider/Cards -->
+          <div class="cabins-list">
+            
+            <!-- Cabin Card 1 -->
+            <div class="cabin-card active" data-cabin="classic" data-price="45">
+              <div class="cabin-badge">Populairst</div>
+              <div class="cabin-image">
+                <img src="village_hero.png" alt="Klassieke Rood-Witte Paddenstoel">
+              </div>
+              <div class="cabin-info">
+                <div class="cabin-header">
+                  <h3>Klassieke Rood-Witte Paddenstoel</h3>
+                  <div class="price-tag">&euro;45<span>/ nacht</span></div>
+                </div>
+                <p>Het iconische smurfenhuisje. Perfect voor een authentieke ervaring. Knus ingericht met een heerlijk bed van dennentakken en zachte moskussens.</p>
+                <ul class="cabin-features">
+                  <li><i data-lucide="users"></i> Geschikt voor 1 - 2 smurfen</li>
+                  <li><i data-lucide="heart"></i> Uitzicht op het dorpsplein</li>
+                  <li><i data-lucide="wifi"></i> Bos-verbinding (offline luxe)</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Cabin Card 2 -->
+            <div class="cabin-card" data-cabin="chanterelle" data-price="60">
+              <div class="cabin-image">
+                <img src="cozy_interior.png" alt="De Gezellige Cantharel">
+              </div>
+              <div class="cabin-info">
+                <div class="cabin-header">
+                  <h3>De Gezellige Goudgele Cantharel</h3>
+                  <div class="price-tag">&euro;60<span>/ nacht</span></div>
+                </div>
+                <p>Genesteld onder een eeuwenoude eik. Dit huisje biedt extra warmte en rust. Voorzien van een eigen stenen haardvuur en een schattig rond venster.</p>
+                <ul class="cabin-features">
+                  <li><i data-lucide="users"></i> Geschikt voor 2 - 3 smurfen</li>
+                  <li><i data-lucide="flame"></i> Werkende open haard</li>
+                  <li><i data-lucide="coffee"></i> Sarsaparilla thee inclusief</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Cabin Card 3 -->
+            <div class="cabin-card" data-cabin="bolete" data-price="95">
+              <div class="cabin-badge lux">Premium</div>
+              <div class="cabin-image">
+                <img src="cozy_interior.png" alt="De Luxe Koningsboleet Suite">
+              </div>
+              <div class="cabin-info">
+                <div class="cabin-header">
+                  <h3>Luxe Koningsboleet Suite</h3>
+                  <div class="price-tag">&euro;95<span>/ nacht</span></div>
+                </div>
+                <p>Onze grootste en meest luxe accommodatie. Bestaat uit twee verdiepingen, een comfortabel hemelbed, een handgemaakt houten bad en een prachtig balkon boven de Smurfenrivier.</p>
+                <ul class="cabin-features">
+                  <li><i data-lucide="users"></i> Geschikt voor 1 - 4 smurfen</li>
+                  <li><i data-lucide="waves"></i> Balkon boven de rivier</li>
+                  <li><i data-lucide="sparkles"></i> Welkomstmand vol smurfenbessen</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Booking Interactive Form -->
+          <div class="booking-form-card">
+            <h3>Jouw Verblijf Boeken</h3>
+            <p class="form-desc">Vul de gegevens in en bereken direct de kosten van je smurfige vakantie.</p>
+            
+            <form id="booking-form" novalidate>
+              <div class="form-group">
+                <label for="cabin-select">Geselecteerd Huisje</label>
+                <div class="select-wrapper">
+                  <select id="cabin-select" name="cabin" required>
+                    <option value="classic" data-price="45" selected>Klassieke Rood-Witte Paddenstoel (&euro;45/nacht)</option>
+                    <option value="chanterelle" data-price="60">De Gezellige Cantharel (&euro;60/nacht)</option>
+                    <option value="bolete" data-price="95">Luxe Koningsboleet Suite (&euro;95/nacht)</option>
+                  </select>
+                  <i data-lucide="chevron-down" class="select-arrow"></i>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="checkin-date">Aankomst</label>
+                  <input type="date" id="checkin-date" name="checkin" required>
+                </div>
+                <div class="form-group">
+                  <label for="checkout-date">Vertrek</label>
+                  <input type="date" id="checkout-date" name="checkout" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="guests-count">Aantal Gasten</label>
+                <div class="guests-counter-input">
+                  <button type="button" id="btn-decrease-guests" class="counter-btn" aria-label="Minder gasten"><i data-lucide="minus"></i></button>
+                  <input type="number" id="guests-count" name="guests" value="1" min="1" max="4" readonly>
+                  <button type="button" id="btn-increase-guests" class="counter-btn" aria-label="Meer gasten"><i data-lucide="plus"></i></button>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Extra Opties</label>
+                <div class="checkbox-group">
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="addons" value="breakfast" data-price="10">
+                    <span class="checkmark"></span>
+                    <span class="label-text">Smurfenbessen Ontbijt (&euro;10 p.p. / nacht)</span>
+                  </label>
+                  
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="addons" value="papas-tour" data-price="25">
+                    <span class="checkmark"></span>
+                    <span class="label-text">Papa Smurf Kruidentour (&euro;25 eenmalig)</span>
+                  </label>
+
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="addons" value="woodcarving" data-price="15">
+                    <span class="checkmark"></span>
+                    <span class="label-text">Workshop Houtsnijden met Knutselsmurf (&euro;15 p.p.)</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Price summary preview (dynamic) -->
+              <div class="price-breakdown" id="price-breakdown">
+                <div class="price-row">
+                  <span id="breakdown-cabin-label">Huisje (0 nachten)</span>
+                  <span id="breakdown-cabin-cost">&euro;0</span>
+                </div>
+                <div class="price-row" id="breakdown-addons-row" style="display: none;">
+                  <span>Extra's</span>
+                  <span id="breakdown-addons-cost">&euro;0</span>
+                </div>
+                <div class="price-row divider">
+                  <strong>Totaalprijs</strong>
+                  <strong id="breakdown-total" class="total-highlight">&euro;0</strong>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-large ripple-button">
+                <i data-lucide="sparkles"></i> Boek Dit Paddenstoeltje
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section section-padding" id="ervaringen">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Gastrecensies</span>
+          <h2>Wat andere gasten vertellen</h2>
+          <p>Ervaar de magie door de ogen van onze eerdere bezoekers en dorpsgenoten.</p>
+        </div>
+
+        <div class="grid grid-3-cols">
+          <!-- Review 1 -->
+          <div class="review-card">
+            <div class="review-rating">
+              <i data-lucide="star" class="fill"></i>
+              <i data-lucide="star" class="fill"></i>
+              <i data-lucide="star" class="fill"></i>
+              <i data-lucide="star" class="fill"></i>
+              <i data-lucide="star" class="fill"></i>
+            </div>
+            <p class="review-text">"Mijn verblijf in de Koningsboleet Suite was werkelijk fantastisch! Het geruis van de Smurfenrivier was zo rustgevend. De welkomstmand met smurfenbessen was heerlijk. Jona is een fantastische gids!"</p>
+            <div class="review-author">
+              <div class="author-avatar"><span class="avatar-letter">S</span></div>
+              <div>
+                <h4>Smurfin</h4>
+                <p>Premium Gast &amp; Modeontwerpster</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="review-card">
+            <div class="review-rating">
+              <i data-lucide="star" class="fill"></i>
+              <i data-lucide="star" class="fill"></i>
+              <i data-lucide="star" class="fill"></i>
+              <i data-lucide="star" class="fill"></i>
+              <i data-lucide="star" class="fill"></i>
+            </div>
+            <p class="review-text">"Zoals ik altijd al zeg: een goede organisatie is het halve werk. En ik moet toegeven, Jona's rondleiding zit logisch in elkaar. De paddenstoelen zijn perfect onderhouden en schoon. Zeer aanbevolen!"</p>
+            <div class="review-author">
+              <div class="author-avatar"><span class="avatar-letter">B</span></div>
+              <div>
+                <h4>Brilsmurf</h4>
+                <p>Dorpsarchivaris &amp; Wetenschapper</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="review-card">
+            <div class="review-rating">
+              <i data-lucide="star" class="fill"></i>
+              <i data-lucide="star" class="fill"></i>
+              <i data-lucide="star" class="fill"></i>
+              <i data-lucide="star" class="fill"></i>
+              <i data-lucide="star" class="fill"></i>
+            </div>
+            <p class="review-text">"Ik wilde een grapje uithalen door een fop-cadeau onder het bed van de Cantharel te leggen. Maar de haard brandde zo lekker en de sfeer was zo knus dat ik in slaap viel. Echt super smurfig!"</p>
+            <div class="review-author">
+              <div class="author-avatar"><span class="avatar-letter">L</span></div>
+              <div>
+                <h4>Lolsmurf</h4>
+                <p>Professioneel Grappenmaker</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Booking Confirmation Modal Dialog -->
+  <dialog id="booking-modal" class="booking-modal-dialog">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="btn-close-modal" aria-label="Sluiten">
+        <i data-lucide="x"></i>
+      </button>
+      
+      <div class="modal-success-header">
+        <div class="success-icon-wrapper">
+          <i data-lucide="check-circle-2"></i>
+        </div>
+        <h2>Boeking Geslaagd!</h2>
+        <p>Jona maakt je paddenstoel alvast gereed.</p>
+      </div>
+
+      <!-- Magical Ticket Visual -->
+      <div class="smurf-ticket">
+        <div class="ticket-header">
+          <span class="ticket-brand">Jona's Smurfen Dorp</span>
+          <span class="ticket-type">Officieel Toegangsbewijs</span>
+        </div>
+        
+        <div class="ticket-body">
+          <div class="ticket-row">
+            <div class="ticket-col">
+              <span class="ticket-label">Boekingscode</span>
+              <strong id="ticket-code" class="ticket-value">SMURF-XXXX-X</strong>
+            </div>
+            <div class="ticket-col">
+              <span class="ticket-label">Accommodatie</span>
+              <strong id="ticket-cabin" class="ticket-value">Klassieke Paddenstoel</strong>
+            </div>
+          </div>
+          
+          <div class="ticket-row">
+            <div class="ticket-col">
+              <span class="ticket-label">Aankomst & Vertrek</span>
+              <strong id="ticket-dates" class="ticket-value">DD-MM-YYYY t/m DD-MM-YYYY</strong>
+            </div>
+            <div class="ticket-col">
+              <span class="ticket-label">Aantal Gasten</span>
+              <strong id="ticket-guests" class="ticket-value">1 smurf</strong>
+            </div>
+          </div>
+          
+          <div class="ticket-row border-top">
+            <div class="ticket-col full-width">
+              <span class="ticket-label">Geselecteerde Extra's</span>
+              <span id="ticket-addons" class="ticket-value">Geen</span>
+            </div>
+          </div>
+          
+          <div class="ticket-row border-top">
+            <div class="ticket-col">
+              <span class="ticket-label">Betalingswijze</span>
+              <strong class="ticket-value"><i data-lucide="coins"></i> Smurfmunten / Achteraf</strong>
+            </div>
+            <div class="ticket-col text-right">
+              <span class="ticket-label">Totaal betaald</span>
+              <strong id="ticket-total" class="ticket-total-value">&euro;0</strong>
+            </div>
+          </div>
+        </div>
+        
+        <div class="ticket-cut-line">
+          <span class="cut-left"></span>
+          <span class="cut-right"></span>
+        </div>
+        
+        <div class="ticket-footer">
+          <p>Neem dit ticket geprint of digitaal mee naar het bos. Jona wacht op je bij de grote eik!</p>
+          <div class="ticket-barcode">
+            <span>||||| ||| |||| || ||||| | ||||</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button id="btn-print-ticket" class="btn btn-primary"><i data-lucide="printer"></i> Ticket Opslaan / Printen</button>
+        <button id="btn-done-modal" class="btn btn-outline">Sluiten</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Magical Floating Particles Background Layer -->
+  <div id="magic-particles" class="particles-layer" aria-hidden="true"></div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Jona's <span>Smurfen Dorp</span></h3>
+          <p>Verborgen diep in het woud, waar de natuur en vriendschap bloeien. Het leukste smurfendorp van heel Europa.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Volg ons op Bos-boek"><i data-lucide="facebook"></i></a>
+            <a href="#" aria-label="Volg ons op Smurf-gram"><i data-lucide="instagram"></i></a>
+            <a href="#" aria-label="Bekijk onze bosvlogs"><i data-lucide="youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Koppelingen</h4>
+          <ul class="footer-links">
+            <li><a href="#over-jona">Over Jona</a></li>
+            <li><a href="#rondleiding">De Rondleiding</a></li>
+            <li><a href="#boek-huisje">Boek een Huisje</a></li>
+            <li><a href="#ervaringen">Gastrecensies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Veiligheid & Bosregels</h4>
+          <ul class="footer-links">
+            <li><a href="#">Gargamel Alarmprocedures</a></li>
+            <li><a href="#">Hoe vind je de geheime route?</a></li>
+            <li><a href="#">Smurfenbes Consumptierichtlijnen</a></li>
+            <li><a href="#">Algemene Huurvoorwaarden</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Nieuwsbrief (Smurfenpost)</h4>
+          <p>Blijf op de hoogte van oogstfeesten, paddenstoelenrenovatie en speciaal bezoek.</p>
+          <form class="newsletter-form" id="newsletter-form" onsubmit="event.preventDefault(); alert('Bedankt voor je inschrijving op de Smurfenpost!'); this.reset();">
+            <input type="email" placeholder="Je bos-mailadres" required aria-label="Bos-mailadres">
+            <button type="submit" class="btn btn-primary btn-icon" aria-label="Aanmelden"><i data-lucide="send"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        <p>&copy; 2026 Jona's Smurfen Dorp &bull; Alle rechten gesmurft.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
